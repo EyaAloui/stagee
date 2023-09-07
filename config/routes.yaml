@@ -1,0 +1,16 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+
+app_front:
+    resource:  App\Controller\FrontController
+    type: annotation
+
+
+app_admin:
+    resource:  App\Controller\AdminController
+    type: annotation
+candidature_create:
+    path: '/{id}/candidature'
+    controller: 'App\Controller\OpportinuteController::createCandidature'
+    
